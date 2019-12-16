@@ -22,8 +22,14 @@ endif
 ifeq ($(ARCH),x86_64)
 	NPC_ARCH:=amd64
 endif
-ifeq ($(ARCH),arm)
-	NPC_ARCH:=arm
+ifeq ($(ARCH),armv5)
+	NPC_ARCH:=arm_v5
+endif
+ifeq ($(ARCH),armv6)
+	NPC_ARCH:=arm_v6
+endif
+ifeq ($(ARCH),armv7)
+	NPC_ARCH:=arm_v7
 endif
 ifeq ($(ARCH),aarch64)
 	NPC_ARCH:=arm64
